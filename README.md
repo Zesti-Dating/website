@@ -10,9 +10,9 @@ Clone the repository and run `npm install` to install dependencies. Run the webs
 
 ## Contributing
 
-If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstnameLastname/Feature`. For example, one name could be `steveli/waitlist-subscribe`. Push your changes and make a pr into `main`.
+If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstnameLastname/Feature`. For example, one name could be `steveli/waitlist-subscribe`. Push your changes and make a pull request into `dev`.
 
-For styling, we use `styled-components` (https://styled-components.com/).
+For styling, we use `styled-components` (https://styled-components.com/). Look at some of the components for examples.
 
 Before merging your pull request, your branch must pass all of our CI tests. Currently, the only workflow we have right now is the linter, which you can run on your local machine to see errors by typing in `npm run lint-check` and fixing them with `npm run lint-fix`.
 
