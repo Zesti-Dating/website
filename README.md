@@ -10,7 +10,9 @@ Clone the reposiroty and run `npm install` to install dependencies. Run the webs
 
 ## Contributing
 
-If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstLast/Feature`. For example, one name could be `steveli/waitlist-subscribe`. For a guide on the file structure, please see the chart below.
+If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstnameLastname/Feature`. For example, one name could be `steveli/waitlist-subscribe`.
+
+For styling, we use `styled-components` (https://styled-components.com/).
 
 Before merging your pull request, your branch must pass all of our CI tests. Currently, the only workflow we have right now is the linter, which you can run on your local machine to see errors by typing in `npm run lint-check` and fixing them with `npm run lint-fix`.
 
@@ -39,13 +41,13 @@ A tree structure is provided below. When making a new file, please add it to thi
 │   │   ├── components
 │   |   |   ├── footer --> react component for the footer
 │   |   |   |   ├── footer.tsx
-│   |   |   |   └── footer.ts
+│   |   |   |   └── styles.ts
 │   |   |   ├── layout --> react components for any layout oriented functionality
 │   |   |   |   ├── layout.tsx
-│   |   |   |   └── layout.ts
+│   |   |   |   └── styles.ts
 │   |   |   ├── navbar --> react component for the navbar
 │   |   |   |   ├── navbar.tsx
-│   |   |   |   └── navbar.ts
+│   |   |   |   └── styles.ts
 │   |   |   ├── button.ts --> Button component
 │   |   |   ├── fade.ts --> fade in component
 │   |   |   ├── index.ts --> reducer that exposes all of the shared components
