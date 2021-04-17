@@ -22,21 +22,25 @@ export const ContainerInner = styled.div`
   max-width: 1200px;
   min-height: 65vh;
   position: relative;
-  display: grid;
   @media ${device.mobileS} {
     padding: 0px 0px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 80%;
   }
 
-  @media ${device.tabletL} {
+  @media ${device.laptopM} {
     padding: 0px 0px;
 
     width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
   }
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
-  align-content: center;
 `;
 
 const gradient = keyframes`
@@ -73,6 +77,8 @@ export const Banner = styled.div`
   top: 0;
   left: 0;
   animation: ${gradient} 15s ease infinite;
+
+  border-radius: 0 0 30% 0 / 100px;
 `;
 
 export const Heading = styled.h1`
@@ -87,11 +93,23 @@ export const HeaderImage = styled.img`
   height: auto;
   align-self: center;
   justify-self: center;
+  @media ${device.mobileS} {
+    margin-top: 2em;
+  }
+
+  @media ${device.laptopM} {
+    margin-top: 0;
+  }
 `;
 
 export const Description = styled.p`
   font-family: ${fonts.SECONDARY};
   font-size: 18px;
-  margin: 0px !important;
+  margin: 0px 0px 2em 0px;
   color: #1e3d59;
+`;
+
+export const Inputs = styled.div`
+  display: flex;
+  width: 100%;
 `;

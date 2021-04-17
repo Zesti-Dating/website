@@ -24,7 +24,7 @@ export const ZestiFadeIn = (props: {
     from: { opacity: 0 },
     to: { opacity: 1 },
     config: {
-      tension: 60,
+      tension: 80,
     },
   });
   return (

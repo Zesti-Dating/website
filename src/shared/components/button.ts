@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { fonts } from "@app/styles/styles";
 
 export const Button = styled.button<{
-  color: string;
-  backgroundColor: string;
-  padding: string;
-  margin: string;
-  borderRadius: string;
-  fontSize: string;
+  color?: string;
+  backgroundColor?: string;
+  padding?: string;
+  margin?: string;
+  borderRadius?: string;
+  fontSize?: string;
 }>`
   font-family: ${fonts.PRIMARY};
   padding: ${(props) => props.padding};

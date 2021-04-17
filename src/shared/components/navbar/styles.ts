@@ -16,14 +16,8 @@ export const NavbarInner = styled.div`
   @media ${device.mobileS} {
     width: 80%;
   }
-  @media ${device.tablet} {
-    width: 80%;
-  }
-  @media ${device.tabletL} {
-    width: 100%;
-  }
 
-  @media ${device.laptop} {
+  @media ${device.laptopM} {
     width: 100%;
     max-width: 1200px;
   }
