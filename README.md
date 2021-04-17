@@ -1,24 +1,69 @@
-# New Project
+# Zesti Website
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
-## Available Scripts
+This repository contains the code for the Zesti Website. The goal is to make this a completely static website, keeping our needs light and our code clean.
 
-### npm start
+## Setting up for Development
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+Clone the reposiroty and run `npm install` to install dependencies. Run the website by running `npm start`. Any other commands can be seen inside `package.json`.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+## Contributing
 
-### npm run build
+If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstLast/Feature`. For example, one name could be `steveli/waitlist-subscribe`. For a guide on the file structure, please see the chart below.
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+Before merging your pull request, your branch must pass all of our CI tests. Currently, the only workflow we have right now is the linter, which you can run on your local machine to see errors by typing in `npm run lint-check` and fixing them with `npm run lint-fix`.
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
+## File Structure
 
-### Q: What about Eject?
+A tree structure is provided below. When making a new file, please add it to this tree so that it stays up to date.
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+```
+.
+├── .github/workflows --> folder containing all of our CI workflows
+├── public
+│   ├── assets --> contains all of our images and other graphics
+│   ├── index.css --> global css file
+│   └── index.html --> web page for our react app to socket into
+│── scripts --> folder containing our npm scripts, to enable better debugging
+│   ├── lint-fix.sh --> runs the linter and fixes any errors
+│   └── lint-check.sh --> runs the linter
+│── src
+│   └── @types
+│       └── index.d.ts --> abstracts our assets file names so that typescript can recognize them
+│   ├── pages --> contains the pages of our website
+│   │   └── home --> home page
+│   |   |   ├── home.tsx --> react component for the homge page
+│   |   |   └── styles.ts --> styling for the home page
+│   ├── shared --> any shared values, from components, constants, and other utils
+│   │   ├── components
+│   |   |   ├── footer --> react component for the footer
+│   |   |   |   ├── footer.tsx
+│   |   |   |   └── footer.ts
+│   |   |   ├── layout --> react components for any layout oriented functionality
+│   |   |   |   ├── layout.tsx
+│   |   |   |   └── layout.ts
+│   |   |   ├── navbar --> react component for the navbar
+│   |   |   |   ├── navbar.tsx
+│   |   |   |   └── navbar.ts
+│   |   |   ├── button.ts --> Button component
+│   |   |   ├── fade.ts --> fade in component
+│   |   |   ├── index.ts --> reducer that exposes all of the shared components
+│   |   |   ├── input.ts --> input component
+│   |   |   └── slide.tsx --> slide in component
+│   │   ├── constants
+│   |   |   └── routes.ts --> contains our routes
+│   │   └── utils
+│   |   |   └── history.ts --> maintains our browser history for react-router
+│   ├── styles --> global styles
+│   ├── App.tsx --> app component
+│   └── index.tsx --> React DOM initialization
+│── .eslintrc.js --> eslint config file
+│── .gitignore
+│── package.json --> lists our dependencies and scripts
+│── package-lock.json
+│── README.md
+│── snowpack.config.js --> config file for snowpack, the frontend build tool that we're using (https://www.snowpack.dev/)
+└── tsconfig.json --> typescript configuration
+
+```
