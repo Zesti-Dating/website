@@ -5,6 +5,7 @@ import {
   Button,
   ZestiFadeIn,
   ZestiSlideIn,
+  Footer,
 } from "@app/shared/components/index";
 import { colors } from "@app/styles/styles";
 import {
@@ -17,6 +18,9 @@ import {
   Inputs,
 } from "./styles";
 import Phone from "@app/assets/message.svg";
+import Eating from "@app/assets/eating.svg";
+import Plan from "@app/assets/plan.svg";
+import Swipe from "@app/assets/swipe.svg";
 const Home = () => {
   /**
    * TODO: Create inputs, rows with content
@@ -61,6 +65,7 @@ const Home = () => {
         </ZestiFadeIn>
       </Container>
       <Container></Container>
+      <Footer />
     </>
   );
 };
