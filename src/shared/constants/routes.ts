@@ -1,5 +1,5 @@
 export const routes = {
-  ABOUT: "/",
-};
+  ABOUT: '/'
+}
 
-export default routes;
+export default routes

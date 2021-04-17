@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { animated, Spring } from "react-spring";
-import VisibilitySensor from "react-visibility-sensor";
+import React, { useState } from 'react'
+import { animated, Spring } from 'react-spring'
+import VisibilitySensor from 'react-visibility-sensor'
 
 /**
  * Wraps around child elements and applies a slide in animation, either from the left
@@ -16,15 +16,15 @@ import VisibilitySensor from "react-visibility-sensor";
  *  left: whether to slide in from the left or right
  */
 export const ZestiSlideIn = (props: {
-  children: JSX.Element;
-  left: boolean;
+  children: JSX.Element
+  left: boolean
 }) => {
-  const [once, setOnce] = useState(false);
+  const [once, setOnce] = useState(false)
   return (
     <VisibilitySensor>
       {({ isVisible }) => {
         if (isVisible) {
-          setOnce(true);
+          setOnce(true)
         }
         return (
           <div {...props}>
@@ -33,16 +33,16 @@ export const ZestiSlideIn = (props: {
                 config={{ tension: 100 }}
                 from={{
                   transform: props.left
-                    ? "translateX(-200%)"
-                    : "translateX(200%)",
+                    ? 'translateX(-200%)'
+                    : 'translateX(200%)'
                 }}
                 to={{
                   transform:
                     isVisible || once
-                      ? "translateX(0)"
+                      ? 'translateX(0)'
                       : props.left
-                      ? "translateX(-200%)"
-                      : "translateX(200%)",
+                        ? 'translateX(-200%)'
+                        : 'translateX(200%)'
                 }}
               >
                 {(transform) => {
@@ -50,13 +50,13 @@ export const ZestiSlideIn = (props: {
                     <animated.div style={transform}>
                       {props.children}
                     </animated.div>
-                  );
+                  )
                 }}
               </Spring>
             </div>
           </div>
-        );
+        )
       }}
     </VisibilitySensor>
-  );
-};
+  )
+}

@@ -5,7 +5,6 @@ import {
   Button,
   ZestiFadeIn,
   ZestiSlideIn,
-  Footer,
 } from "@app/shared/components/index";
 import { colors } from "@app/styles/styles";
 import {
@@ -18,9 +17,9 @@ import {
   Inputs,
 } from "./styles";
 import Phone from "@app/assets/message.svg";
-import Eating from "@app/assets/eating.svg";
-import Plan from "@app/assets/plan.svg";
-import Swipe from "@app/assets/swipe.svg";
+// import Eating from '@app/assets/eating.svg'
+// import Plan from '@app/assets/plan.svg'
+// import Swipe from '@app/assets/swipe.svg'
 const Home = () => {
   /**
    * TODO: Create inputs, rows with content
@@ -39,8 +38,8 @@ const Home = () => {
                 <div style={{ paddingRight: "1em" }}>
                   <Heading>The Only Dating App Designed to etc. etc.</Heading>
                   <Description>
-                    We put the "Date" in "Dating." Zesti is the app where blah
-                    blah blah blah etc. etc. etc. something goes here.
+                    We put the Date in Dating Zesti is the app where blah blah
+                    blah blah something goes here.
                   </Description>
                   <Inputs>
                     <Input placeholder="Email" borderRadius="40px 0 0 40px" />

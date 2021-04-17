@@ -1,8 +1,8 @@
-import React, { Children } from "react";
-import { useTrail, animated } from "react-spring";
+import React, { Children } from 'react'
+import { useTrail, animated } from 'react-spring'
 
 export const ZestiFadeIn = (props: {
-  children: JSX.Element | JSX.Element[];
+  children: JSX.Element | JSX.Element[]
 }) => {
   /*
         Description:
@@ -19,14 +19,14 @@ export const ZestiFadeIn = (props: {
             children(JSX.Element | JSX.Element[]): Any children nested within this component
     */
 
-  const items = Children.toArray(props.children);
+  const items = Children.toArray(props.children)
   const trail = useTrail(items.length, {
     from: { opacity: 0 },
     to: { opacity: 1 },
     config: {
-      tension: 80,
-    },
-  });
+      tension: 80
+    }
+  })
   return (
     <div {...props}>
       <div>
@@ -37,5 +37,5 @@ export const ZestiFadeIn = (props: {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}

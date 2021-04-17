@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { device } from "@app/shared/components/layout/layout";
-import { colors, fonts } from "@app/styles/styles";
+import styled, { keyframes } from 'styled-components'
+import { device } from '@app/shared/components/layout/layout'
+import { colors, fonts } from '@app/styles/styles'
 
 export const Container = styled.div`
   width: 100%;
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   background-color: ${colors.TERNARY};
   position: relative;
-`;
+`
 
 export const ContainerInner = styled.div`
   position: relative;
@@ -41,7 +41,7 @@ export const ContainerInner = styled.div`
     justify-content: center;
     align-content: center;
   }
-`;
+`
 
 const gradient = keyframes`
 	0% {
@@ -53,7 +53,7 @@ const gradient = keyframes`
 	100% {
 		background-position: 0% 50%;
 	}
-`;
+`
 export const Banner = styled.div`
   background-size: 400% 400%;
 
@@ -79,13 +79,13 @@ export const Banner = styled.div`
   animation: ${gradient} 15s ease infinite;
 
   border-radius: 0 0 30% 0 / 100px;
-`;
+`
 
 export const Heading = styled.h1`
   font-size: 72px;
   font-weight: 700;
   color: #1e3d59;
-`;
+`
 
 export const HeaderImage = styled.img`
   width: 100%;
@@ -100,16 +100,16 @@ export const HeaderImage = styled.img`
   @media ${device.laptopM} {
     margin-top: 0;
   }
-`;
+`
 
 export const Description = styled.p`
   font-family: ${fonts.SECONDARY};
   font-size: 18px;
   margin: 0px 0px 2em 0px;
   color: #1e3d59;
-`;
+`
 
 export const Inputs = styled.div`
   display: flex;
   width: 100%;
-`;
+`
