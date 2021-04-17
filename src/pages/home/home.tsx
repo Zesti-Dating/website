@@ -64,8 +64,7 @@ const Home = () => {
           </div>
         </ZestiFadeIn>
       </Container>
-      <Container></Container>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
