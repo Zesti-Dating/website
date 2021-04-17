@@ -6,11 +6,11 @@ This repository contains the code for the Zesti Website. The goal is to make thi
 
 ## Setting up for Development
 
-Clone the reposiroty and run `npm install` to install dependencies. Run the website by running `npm start`. Any other commands can be seen inside `package.json`.
+Clone the repository and run `npm install` to install dependencies. Run the website by running `npm start`. Any other commands can be seen inside `package.json`.
 
 ## Contributing
 
-If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstnameLastname/Feature`. For example, one name could be `steveli/waitlist-subscribe`.
+If you'd like to contribute to the website, make your changes on a separate branch with the format `FirstnameLastname/Feature`. For example, one name could be `steveli/waitlist-subscribe`. Push your changes and make a pr into `main`.
 
 For styling, we use `styled-components` (https://styled-components.com/).
 
