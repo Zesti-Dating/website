@@ -24,6 +24,7 @@ module.exports = {
     /* ... */
   },
   devOptions: {
+    port: process.env.PORT || 8080,
     /* ... */
   },
   buildOptions: {
