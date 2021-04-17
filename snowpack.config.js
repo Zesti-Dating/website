@@ -24,8 +24,6 @@ module.exports = {
     /* ... */
   },
   devOptions: {
-    hmrPort: process.env.PORT || 3000,
-
     /* ... */
   },
   buildOptions: {},
