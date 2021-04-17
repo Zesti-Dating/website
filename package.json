@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "chmod +x ./scripts/start.sh && ./scripts/start.sh",
+    "build": "chmod +x ./scripts/build.sh && ./scripts/build.sh",
     "lint-fix": "chmod +x ./scripts/lint-fix.sh && ./scripts/lint-fix.sh",
     "lint-check": "chmod +x ./scripts/lint-check.sh && ./scripts/lint-check.sh",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
