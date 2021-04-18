@@ -11,9 +11,6 @@ on:
       - main
       - staging
       - dev
-    paths:
-      - "!README.md"
-      - ".github/workflows/website-check-pr.yml"
   workflow_dispatch:
 
 jobs:
