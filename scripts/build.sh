@@ -2,4 +2,9 @@
 
 set -Eeuo pipefail
 
-npx snowpack build
+if [ -z ${PORT+x} ];
+then 
+  PORT=8080
+fi
+
+npx snowpack build --port $PORT
