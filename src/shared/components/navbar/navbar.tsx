@@ -3,19 +3,24 @@ import { NavbarContainer, NavbarInner, Links, NavItem, Brand } from './styles'
 import { Link } from 'react-router-dom'
 import { Button } from '@app/shared/components/button'
 import { colors } from '@app/styles/styles'
+import routes from '@app/shared/constants/routes'
+import Zesti from "@app/assets/zesti.svg"
 const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarInner>
-        <Brand>Zesti</Brand>
+        <Brand src={Zesti} />
         <Links>
           <NavItem>
-            <Link to="/">Mission</Link>
+            <Link to={routes.ABOUT}>About</Link>
           </NavItem>
           <NavItem>
-            <Link to="/">App</Link>
+            <Link to={routes.INSTA}>Instagram</Link>
           </NavItem>
-          <Link to="/">
+          <NavItem>
+            <Link to={routes.CONTACT}>Contact</Link>
+          </NavItem>
+          <Link to="/waitlist">
             <Button
               padding="9px 37px 9px 37px"
               backgroundColor={colors.PRIMARY}

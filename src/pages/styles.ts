@@ -16,6 +16,27 @@ export const Container = styled.div`
   position: relative;
 `
 
+export const ContainerLogo = styled.div`
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  @media ${device.laptop} {
+    min-width: 400px;
+  }
+
+  background: linear-gradient(
+    180deg,
+    #fd8440 18.75%,
+    #f2a000 50.52%,
+    #ffba6d 100%
+  ),
+  #c4c4c4;
+  position: relative;
+`
+
 export const ContainerInner = styled.div`
   position: relative;
   width: 100%;
@@ -85,6 +106,21 @@ export const Heading = styled.h1`
   font-size: 72px;
   font-weight: 700;
   color: #1e3d59;
+`
+
+export const LogoImage = styled.img`
+  width: 250%;
+  max-width: 1000px;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  @media ${device.mobileS} {
+    margin-top: 2em;
+  }
+
+  @media ${device.laptopM} {
+    margin-top: 0;
+  }
 `
 
 export const HeaderImage = styled.img`

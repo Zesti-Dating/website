@@ -16,11 +16,11 @@ import {
   Description,
   Inputs,
 } from "./styles";
-import Phone from "@app/assets/message.svg";
+import Instagram from "@app/assets/instagram.svg";
 // import Eating from '@app/assets/eating.svg'
 // import Plan from '@app/assets/plan.svg'
 // import Swipe from '@app/assets/swipe.svg'
-const Home = () => {
+const Insta = () => {
   /**
    * TODO: Create inputs, rows with content
    */
@@ -36,29 +36,13 @@ const Home = () => {
             <ContainerInner>
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
-                  <Heading>The Only Dating App Designed to etc. etc.</Heading>
+                  <Heading>This is the Instagram Section of the website.</Heading>
                   <Description>
-                    We put the Date in Dating Zesti is the app where blah blah
-                    blah blah something goes here.
+                    Here, we will show you to our Instagram page and tell you why you should follow it.
                   </Description>
-                  <Inputs>
-                    <Input placeholder="Email" borderRadius="40px 0 0 40px" />
-                    <Button
-                      backgroundColor={colors.PRIMARY}
-                      padding="0px 10px 0px 10px"
-                      borderRadius="0px 40px 40px 0px"
-                      color="#ffffff"
-                      style={{
-                        width: "200px",
-                      }}
-                    >
-                      {" "}
-                      Join Waitlist{" "}
-                    </Button>
-                  </Inputs>
                 </div>
               </ZestiSlideIn>
-              <HeaderImage src={Phone} />
+              <HeaderImage src={Instagram} />
             </ContainerInner>
           </div>
         </ZestiFadeIn>
@@ -68,4 +52,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Insta;
