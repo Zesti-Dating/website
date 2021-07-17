@@ -112,8 +112,8 @@ export const LogoImage = styled.img`
   width: 250%;
   max-width: 1000px;
   height: auto;
-  align-self: center;
-  justify-self: center;
+  position: relative;
+  left: -200px;
   @media ${device.mobileS} {
     margin-top: 2em;
   }
@@ -121,6 +121,19 @@ export const LogoImage = styled.img`
   @media ${device.laptopM} {
     margin-top: 0;
   }
+`
+
+const floating = keyframes`
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 20px); }
+  to   { transform: translate(0, -0px); }  
+`
+
+export const LogoAnimation = styled.div`
+  animation-name: ${floating};
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 `
 
 export const HeaderImage = styled.img`
@@ -148,4 +161,30 @@ export const Description = styled.p`
 export const Inputs = styled.div`
   display: flex;
   width: 100%;
+`
+export const LinkItem = styled.div`
+  @media ${device.mobileS} {
+    display: none;
+  }
+
+  @media ${device.laptop} {
+    display: flex;
+    align-items: center;
+  }
+
+  & a {
+    color: #ff5c5c !important;
+    font-size: 72px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  & a:hover {
+    color: rgba(230, 230, 230, 1) !important;
+  }
+
+  & a:visited {
+    color: black;
+  }
 `

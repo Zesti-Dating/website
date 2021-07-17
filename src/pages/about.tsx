@@ -34,7 +34,6 @@ const About = () => {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <ContainerInner>
-              <HeaderImage src={Eating} />
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
                   <Heading>This is the About Section of the website.</Heading>
@@ -43,6 +42,7 @@ const About = () => {
                   </Description>
                 </div>
               </ZestiSlideIn>
+              <HeaderImage src={Eating} />
             </ContainerInner>
           </div>
         </ZestiFadeIn>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {
   Navbar,
   Input,
@@ -15,7 +16,9 @@ import {
   HeaderImage,
   Description,
   Inputs,
+  LinkItem,
 } from "./styles";
+import routes from '@app/shared/constants/routes';
 import Instagram from "@app/assets/instagram.svg";
 // import Eating from '@app/assets/eating.svg'
 // import Plan from '@app/assets/plan.svg'
@@ -34,15 +37,18 @@ const Insta = () => {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <ContainerInner>
+              <HeaderImage src={Instagram} />
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
-                  <Heading>This is the Instagram Section of the website.</Heading>
+                  <Heading>Make sure to follow us on Instagram!</Heading>
+                  <LinkItem>
+                    <Link to={routes.INSTALINK}>ZESTIHARVARD</Link>
+                  </LinkItem>
                   <Description>
-                    Here, we will show you to our Instagram page and tell you why you should follow it.
+                    Stay updated on our developments and special promotions!
                   </Description>
                 </div>
               </ZestiSlideIn>
-              <HeaderImage src={Instagram} />
             </ContainerInner>
           </div>
         </ZestiFadeIn>

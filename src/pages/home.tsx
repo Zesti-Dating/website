@@ -16,6 +16,7 @@ import {
   LogoImage,
   Description,
   Inputs,
+  LogoAnimation,
 } from "./styles";
 import Zesti from "@app/assets/zesti.svg"
 // import Eating from '@app/assets/eating.svg'
@@ -30,10 +31,10 @@ const Home = () => {
       <ContainerLogo>
         <Banner />
         <ZestiFadeIn>
-            <ContainerInner>
-                <LogoImage src={Zesti} />
-            </ContainerInner>
-            <Link to="/waitlist">
+            <LogoAnimation>
+              <LogoImage src={Zesti} />
+            </LogoAnimation>
+            <Link to="/about">
                       <Button
                         padding="18px 74px 18px 74px"
                         backgroundColor={colors.PRIMARY}

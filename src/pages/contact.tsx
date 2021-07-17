@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {
   Navbar,
   Input,
@@ -14,8 +15,10 @@ import {
   Heading,
   HeaderImage,
   Description,
+  LinkItem,
   Inputs,
 } from "./styles";
+import routes from '@app/shared/constants/routes';
 import Send from "@app/assets/send.svg";
 // import Eating from '@app/assets/eating.svg'
 // import Plan from '@app/assets/plan.svg'
@@ -36,10 +39,10 @@ const Contact = () => {
             <ContainerInner>
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
-                  <Heading>This is the Contact Section of the website.</Heading>
-                  <Description>
-                    Here, we will send you to a Google Form or something so you can ask us questions and stuff.
-                  </Description>
+                  <Heading>Have questions, suggestions, or other inquiries?</Heading>
+                  <LinkItem>
+                    <Link to={routes.GFORM}>LET US KNOW!</Link>
+                  </LinkItem>
                 </div>
               </ZestiSlideIn>
               <HeaderImage src={Send} />

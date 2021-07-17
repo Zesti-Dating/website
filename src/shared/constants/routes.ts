@@ -4,6 +4,8 @@ export const routes = {
   INSTA: '/insta',
   CONTACT: '/contact',
   WAITLIST: '/waitlist',
+  INSTALINK: '/instalink',
+  GFORM: '/gform',
 }
 
 export default routes
