@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   Input,
@@ -24,6 +24,7 @@ const Waitlist = () => {
   /**
    * TODO: Create inputs, rows with content
    */
+  const [email, setEmail] = useState('');
   return (
     <>
       <Container>
@@ -36,13 +37,17 @@ const Waitlist = () => {
             <ContainerInner>
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
-                  <Heading>The Test Dating App Designed to etc. etc.</Heading>
+                  <Heading>Peel the love tonight, and join our waitlist!</Heading>
                   <Description>
-                    We put the Date in Dating Zesti is the app where blah blah
-                    blah blah something goes here.
+                    Beta Test the Zesti App - we plan to launch in early Fall 2021!
                   </Description>
                   <Inputs>
-                    <Input placeholder="Email" borderRadius="40px 0 0 40px" />
+                    <Input 
+                      placeholder="Email" 
+                      value={ email }
+                      onChange={(e) => setEmail(e.target.value)}
+                      borderRadius="40px 0 0 40px" 
+                    />
                     <Button
                       backgroundColor={colors.PRIMARY}
                       padding="0px 10px 0px 10px"
@@ -56,6 +61,7 @@ const Waitlist = () => {
                       Join Waitlist{" "}
                     </Button>
                   </Inputs>
+                  <p>{ email }</p>
                 </div>
               </ZestiSlideIn>
               <HeaderImage src={Phone} />

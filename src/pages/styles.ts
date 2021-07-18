@@ -103,7 +103,7 @@ export const Banner = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: 72px;
+  font-size: 54px;
   font-weight: 700;
   color: #1e3d59;
 `
@@ -153,7 +153,7 @@ export const HeaderImage = styled.img`
 
 export const Description = styled.p`
   font-family: ${fonts.SECONDARY};
-  font-size: 18px;
+  font-size: 24px;
   margin: 0px 0px 2em 0px;
   color: #1e3d59;
 `

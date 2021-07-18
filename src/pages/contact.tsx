@@ -37,6 +37,7 @@ const Contact = () => {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <ContainerInner>
+              <HeaderImage src={Send} />
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
                   <Heading>Have questions, suggestions, or other inquiries?</Heading>
@@ -45,7 +46,6 @@ const Contact = () => {
                   </LinkItem>
                 </div>
               </ZestiSlideIn>
-              <HeaderImage src={Send} />
             </ContainerInner>
           </div>
         </ZestiFadeIn>
