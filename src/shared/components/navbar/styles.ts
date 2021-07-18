@@ -63,6 +63,18 @@ export const NavItem = styled.p`
   text-align: center;
 `
 
-export const Brand = styled.h1`
-  color: #ffffff;
+export const Brand = styled.img`
+width: 100%;
+max-width: 200px;
+height: auto;
+align-self: center;
+justify-self: center;
+`
+
+export const Insta = styled.img`
+width: 100%;
+max-width: 35px;
+height: auto;
+align-self: center;
+justify-self: center;
 `

@@ -1,21 +1,29 @@
 import React from 'react'
-import { NavbarContainer, NavbarInner, Links, NavItem, Brand } from './styles'
+import { NavbarContainer, NavbarInner, Links, NavItem, Brand, Insta } from './styles'
 import { Link } from 'react-router-dom'
 import { Button } from '@app/shared/components/button'
 import { colors } from '@app/styles/styles'
+import routes from '@app/shared/constants/routes'
+import Zesti from "@app/assets/zesti.svg"
+import Instagram from "@app/assets/instagram.svg";
 const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarInner>
-        <Brand>Zesti</Brand>
+        <Brand src={Zesti} />
         <Links>
           <NavItem>
-            <Link to="/">Mission</Link>
+            <Link to={routes.INSTALINK}>
+            <Insta src={Instagram} />
+            </Link>
           </NavItem>
           <NavItem>
-            <Link to="/">App</Link>
+            <Link to={routes.ABOUT}>About</Link>
           </NavItem>
-          <Link to="/">
+          <NavItem>
+            <Link to={routes.CONTACT}>Contact</Link>
+          </NavItem>
+          <Link to="/waitlist">
             <Button
               padding="9px 37px 9px 37px"
               backgroundColor={colors.PRIMARY}
@@ -24,7 +32,7 @@ const Navbar = () => {
               margin="0px 0px 0px 20px"
               fontSize="1.1rem !important"
             >
-              Join Waitlist
+              Join
             </Button>
           </Link>
         </Links>

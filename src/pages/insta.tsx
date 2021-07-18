@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {
   Navbar,
   Input,
@@ -15,12 +16,14 @@ import {
   HeaderImage,
   Description,
   Inputs,
+  LinkItem,
 } from "./styles";
-import Phone from "@app/assets/message.svg";
+import routes from '@app/shared/constants/routes';
+import Instagram from "@app/assets/instagram.svg";
 // import Eating from '@app/assets/eating.svg'
 // import Plan from '@app/assets/plan.svg'
 // import Swipe from '@app/assets/swipe.svg'
-const Home = () => {
+const Insta = () => {
   /**
    * TODO: Create inputs, rows with content
    */
@@ -34,31 +37,18 @@ const Home = () => {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <ContainerInner>
+              <HeaderImage src={Instagram} />
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
-                  <Heading>The Only Dating App Designed to etc. etc.</Heading>
+                  <Heading>Make sure to follow us on Instagram!</Heading>
+                  <LinkItem>
+                    <Link to={routes.INSTALINK}>ZESTIHARVARD</Link>
+                  </LinkItem>
                   <Description>
-                    We put the Date in Dating Zesti is the app where blah blah
-                    blah blah something goes here.
+                    Stay updated on our developments and special promotions!
                   </Description>
-                  <Inputs>
-                    <Input placeholder="Email" borderRadius="40px 0 0 40px" />
-                    <Button
-                      backgroundColor={colors.PRIMARY}
-                      padding="0px 10px 0px 10px"
-                      borderRadius="0px 40px 40px 0px"
-                      color="#ffffff"
-                      style={{
-                        width: "200px",
-                      }}
-                    >
-                      {" "}
-                      Join Waitlist{" "}
-                    </Button>
-                  </Inputs>
                 </div>
               </ZestiSlideIn>
-              <HeaderImage src={Phone} />
             </ContainerInner>
           </div>
         </ZestiFadeIn>
@@ -68,4 +58,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Insta;

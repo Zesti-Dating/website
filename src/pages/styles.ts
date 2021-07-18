@@ -16,6 +16,27 @@ export const Container = styled.div`
   position: relative;
 `
 
+export const ContainerLogo = styled.div`
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  @media ${device.laptop} {
+    min-width: 400px;
+  }
+
+  background: linear-gradient(
+    180deg,
+    #fd8440 18.75%,
+    #f2a000 50.52%,
+    #ffba6d 100%
+  ),
+  #c4c4c4;
+  position: relative;
+`
+
 export const ContainerInner = styled.div`
   position: relative;
   width: 100%;
@@ -82,9 +103,37 @@ export const Banner = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: 72px;
+  font-size: 54px;
   font-weight: 700;
   color: #1e3d59;
+`
+
+export const LogoImage = styled.img`
+  width: 250%;
+  max-width: 1000px;
+  height: auto;
+  position: relative;
+  left: -200px;
+  @media ${device.mobileS} {
+    margin-top: 2em;
+  }
+
+  @media ${device.laptopM} {
+    margin-top: 0;
+  }
+`
+
+const floating = keyframes`
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 20px); }
+  to   { transform: translate(0, -0px); }  
+`
+
+export const LogoAnimation = styled.div`
+  animation-name: ${floating};
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 `
 
 export const HeaderImage = styled.img`
@@ -104,7 +153,7 @@ export const HeaderImage = styled.img`
 
 export const Description = styled.p`
   font-family: ${fonts.SECONDARY};
-  font-size: 18px;
+  font-size: 24px;
   margin: 0px 0px 2em 0px;
   color: #1e3d59;
 `
@@ -112,4 +161,30 @@ export const Description = styled.p`
 export const Inputs = styled.div`
   display: flex;
   width: 100%;
+`
+export const LinkItem = styled.div`
+  @media ${device.mobileS} {
+    display: none;
+  }
+
+  @media ${device.laptop} {
+    display: flex;
+    align-items: center;
+  }
+
+  & a {
+    color: #ff5c5c !important;
+    font-size: 72px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  & a:hover {
+    color: rgba(230, 230, 230, 1) !important;
+  }
+
+  & a:visited {
+    color: black;
+  }
 `
