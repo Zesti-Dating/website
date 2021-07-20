@@ -20,9 +20,6 @@ const Navbar = () => {
           <NavItem>
             <Link to={routes.ABOUT}>About</Link>
           </NavItem>
-          <NavItem>
-            <Link to={routes.CONTACT}>Contact</Link>
-          </NavItem>
           <Link to="/waitlist">
             <Button
               type="button"

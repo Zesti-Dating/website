@@ -1,12 +1,9 @@
 import React from "react";
 import {
   Navbar,
-  Input,
-  Button,
   ZestiFadeIn,
   ZestiSlideIn,
 } from "@app/shared/components/index";
-import { colors } from "@app/styles/styles";
 import {
   Container,
   ContainerInner,
@@ -14,7 +11,6 @@ import {
   Heading,
   HeaderImage,
   Description,
-  Inputs,
 } from "./styles";
 import Eating from "@app/assets/eating.svg";
 import Breakfast from "@app/assets/breakfast.svg";

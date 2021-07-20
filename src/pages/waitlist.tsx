@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Navbar,
   Input,
@@ -15,7 +15,6 @@ import {
   Heading,
   HeaderImage,
   Description,
-  Inputs,
 } from "./styles";
 import Phone from "@app/assets/message.svg";
 import Send from "@app/assets/send.svg";

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import {
   Navbar,
   Input,
@@ -13,14 +12,7 @@ import {
   Container,
   ContainerInner,
   Banner,
-  Heading,
-  HeaderImage,
-  Description,
-  LinkItem,
-  Inputs,
 } from "./styles";
-import routes from '@app/shared/constants/routes';
-import Send from "@app/assets/send.svg";
 // import Eating from '@app/assets/eating.svg'
 // import Plan from '@app/assets/plan.svg'
 // import Swipe from '@app/assets/swipe.svg'
