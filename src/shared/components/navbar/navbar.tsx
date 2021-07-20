@@ -25,6 +25,7 @@ const Navbar = () => {
           </NavItem>
           <Link to="/waitlist">
             <Button
+              type="button"
               padding="9px 37px 9px 37px"
               backgroundColor={colors.PRIMARY}
               borderRadius="30px"
