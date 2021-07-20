@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   Navbar,
   Input,
+  InputArea,
   Button,
   ZestiFadeIn,
   ZestiSlideIn,
@@ -29,28 +30,48 @@ const Contact = () => {
    */
   return (
     <>
-      <Container>
-        <Banner />
-        <Navbar />
-        <ZestiFadeIn>
-          <div
-            style={{ width: "100%", display: "flex", justifyContent: "center" }}
+      <div style={{ paddingRight: "1em" }}>
+          <form
+            name="waitlist"
+            method="post"
+            data-netlify="true"
           >
-            <ContainerInner>
-              <HeaderImage src={Send} />
-              <ZestiSlideIn left>
-                <div style={{ paddingRight: "1em" }}>
-                  <Heading>Have questions, suggestions, or other inquiries?</Heading>
-                  <LinkItem>
-                    <Link to={routes.GFORM}>LET US KNOW!</Link>
-                  </LinkItem>
-                </div>
-              </ZestiSlideIn>
-            </ContainerInner>
-          </div>
-        </ZestiFadeIn>
-      </Container>
-      {/* <Footer /> */}
+            <input type="hidden" name="form-name" value="waitlist" />
+            <Input 
+              name="first-name"
+              placeholder="First Name (required)" 
+              borderRadius="40px" 
+            />
+            <Input 
+              name="last-name"
+              placeholder="Last Name (required)" 
+              borderRadius="40px" 
+            />
+            <Input 
+              name="email"
+              placeholder="Harvard Email (required)" 
+              borderRadius="40px" 
+            />
+            <InputArea
+              name="comments"
+              placeholder="Any comments, suggestions, or other inquiries (optional)" 
+              borderRadius="40px" 
+            />
+            <Button
+              type="submit"
+              margin="20px"
+              backgroundColor={colors.PRIMARY}
+              padding="10px 10px 10px 10px"
+              borderRadius="40px"
+              color="#ffffff"
+              style={{
+                width: "200px",
+              }}
+            >
+              Join Waitlist
+            </Button>
+          </form>
+        </div>
     </>
   );
 };
