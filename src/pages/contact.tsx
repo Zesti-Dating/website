@@ -29,19 +29,19 @@ const Contact = () => {
    * TODO: Create inputs, rows with content
    */
   return (
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
+    <form name="waitlist" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="waitlist" />
       <p>
-        <label>Your Name: <input type="text" name="name"/></label>
+        <label>Your Name: <Input type="text" name="name"/></label>
       </p>
       <p>
-        <label>Your Email: <input type="email" name="email"/></label>
+        <label>Your Email: <Input type="email" name="email"/></label>
       </p>
       <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <label>Message: <InputArea name="message"></InputArea></label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <Button type="submit">Send</Button>
       </p>
     </form>
   );
