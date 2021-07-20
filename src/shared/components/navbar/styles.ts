@@ -28,7 +28,8 @@ export const NavbarInner = styled.div`
 
 export const Links = styled.div`
   @media ${device.mobileS} {
-    display: none;
+    display: flex;
+    align-items: center;
   }
 
   @media ${device.laptop} {
@@ -65,7 +66,7 @@ export const NavItem = styled.p`
 
 export const Brand = styled.img`
 width: 100%;
-max-width: 15%;
+max-width: 100%;
 height: auto;
 align-self: center;
 justify-self: center;
@@ -73,7 +74,7 @@ justify-self: center;
 
 export const Insta = styled.img`
 width: 100%;
-max-width: 5%;
+max-width: 100%;
 height: auto;
 align-self: center;
 justify-self: center;
