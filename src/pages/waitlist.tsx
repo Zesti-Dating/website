@@ -54,7 +54,6 @@ const Waitlist = () => {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <ContainerInner>
-              
               <ZestiSlideIn left>
                 <div style={{ paddingRight: "1em" }}>
                   <form
@@ -84,6 +83,7 @@ const Waitlist = () => {
                       borderRadius="40px" 
                     />
                     <Button
+                      name="buttonsubmit"
                       type="submit"
                       margin="20px"
                       backgroundColor={colors.PRIMARY}
