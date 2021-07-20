@@ -56,9 +56,7 @@ export const Links = styled.div`
 export const NavItem = styled.p`
   position: relative;
   color: #ffffff;
-  margin: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: auto;
   transition: 0.2s;
   width: fit-content;
   text-align: center;
