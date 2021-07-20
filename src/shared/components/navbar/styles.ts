@@ -66,7 +66,7 @@ export const NavItem = styled.p`
 
 export const Brand = styled.img`
 width: 100%;
-max-width: 100%;
+max-width: 40%;
 height: auto;
 align-self: center;
 justify-self: center;
@@ -74,7 +74,7 @@ justify-self: center;
 
 export const Insta = styled.img`
 width: 100%;
-max-width: 100%;
+max-width: 20%;
 height: auto;
 align-self: center;
 justify-self: center;

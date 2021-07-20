@@ -14,7 +14,7 @@ const Navbar = () => {
         <Links>
           <NavItem>
             <Link to={routes.INSTALINK}>
-            <Insta src={Instagram} />
+              <Insta src={Instagram} />
             </Link>
           </NavItem>
           <NavItem>
