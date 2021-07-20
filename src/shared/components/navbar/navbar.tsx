@@ -12,7 +12,7 @@ const Navbar = () => {
     <NavbarContainer>
       <NavbarInner>
         <Image height="150px" src={Zesti} />
-        <Image height="150px" src={Harvard} />
+        <Image height="80px" src={Harvard} />
         <Links>
           <NavItem>
             <Link to={routes.INSTALINK}>
