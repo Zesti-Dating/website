@@ -34,7 +34,7 @@ const Contact = () => {
           <form
             name="waitlist"
             method="post"
-            data-netlify="true"
+            netlify
           >
             <input type="hidden" name="form-name" value="waitlist" />
             <input 
