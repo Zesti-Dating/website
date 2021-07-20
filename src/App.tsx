@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import history from '@app/shared/utils/history'
 
 import Home from '@app/pages/home'
@@ -11,7 +11,7 @@ import routes from '@app/shared/constants/routes'
 
 function App () {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path={routes.HOME} component={Home} />
         <Route exact path={routes.ABOUT} component={About} />
@@ -27,7 +27,7 @@ function App () {
           return null;
         }}/>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

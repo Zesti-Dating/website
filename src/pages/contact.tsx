@@ -32,16 +32,16 @@ const Contact = () => {
     <form name="waitlist" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="waitlist" />
       <p>
-        <label>Your Name: <Input type="text" name="name"/></label>
+        <label>Your Name: <input type="text" name="name"/></label>
       </p>
       <p>
-        <label>Your Email: <Input type="email" name="email"/></label>
+        <label>Your Email: <input type="email" name="email"/></label>
       </p>
       <p>
-        <label>Message: <InputArea name="message"></InputArea></label>
+        <label>Message: <textarea name="message"></textarea></label>
       </p>
       <p>
-        <Button type="submit">Send</Button>
+        <button type="submit">Send</button>
       </p>
     </form>
   );
