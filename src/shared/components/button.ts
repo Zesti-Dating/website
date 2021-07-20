@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { fonts } from '@app/styles/styles'
 
 export const Button = styled.button<{
+  type: string
   color?: string
   backgroundColor?: string
   padding?: string
@@ -9,6 +10,7 @@ export const Button = styled.button<{
   borderRadius?: string
   fontSize?: string
 }>`
+  type: ${(props) => props.type};
   font-family: ${fonts.PRIMARY};
   padding: ${(props) => props.padding};
   border-radius: ${(props) => props.borderRadius};

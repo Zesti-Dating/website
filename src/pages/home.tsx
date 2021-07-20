@@ -35,17 +35,18 @@ const Home = () => {
               <LogoImage src={Zesti} />
             </LogoAnimation>
             <Link to="/about">
-                      <Button
-                        padding="18px 74px 18px 74px"
-                        backgroundColor={colors.PRIMARY}
-                        borderRadius="30px"
-                        color="#fefefe"
-                        margin="0px 0px 0px 0px"
-                        fontSize="1.5rem !important"
-                      >
-                        Learn More
-                      </Button>
-                    </Link>
+              <Button
+                type="button"
+                padding="18px 74px 18px 74px"
+                backgroundColor={colors.PRIMARY}
+                borderRadius="30px"
+                color="#fefefe"
+                margin="0px 0px 0px 0px"
+                fontSize="1.5rem !important"
+              >
+                Learn More
+              </Button>
+            </Link>
         </ZestiFadeIn>
       </ContainerLogo>
       {/* <Footer /> */}
