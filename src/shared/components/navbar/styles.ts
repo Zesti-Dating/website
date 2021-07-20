@@ -22,6 +22,7 @@ export const NavbarInner = styled.div`
     max-width: 1200px;
   }
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 `
@@ -49,7 +50,8 @@ export const Links = styled.div`
 export const NavItem = styled.p`
   position: relative;
   color: #ffffff;
-  margin: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
   transition: 0.2s;
   width: fit-content;
   text-align: center;

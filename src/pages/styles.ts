@@ -109,17 +109,17 @@ export const Heading = styled.h1`
 `
 
 export const LogoImage = styled.img`
-  width: 250%;
-  max-width: 200%;
   right: 50%;
   height: auto;
   position: relative;
 
   @media ${device.mobileS} {
+    width: 100%;
     margin-top: 2em;
   }
 
   @media ${device.laptopM} {
+    width: 200%;
     margin-top: 0;
   }
 `
