@@ -27,15 +27,8 @@ export const NavbarInner = styled.div`
 `
 
 export const Links = styled.div`
-  @media ${device.mobileS} {
-    display: flex;
-    align-items: center;
-  }
-
-  @media ${device.laptop} {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 
   & a {
     color: #fefefe !important;
@@ -56,16 +49,16 @@ export const Links = styled.div`
 export const NavItem = styled.p`
   position: relative;
   color: #ffffff;
-  margin: auto;
+  margin: 5%;
   transition: 0.2s;
   width: fit-content;
   text-align: center;
 `
 
-export const Image = styled.img`
-height: 100%;
-max-height: 80%;
-height: auto;
+export const Image = styled.img<{
+  height: string
+}>`
+height: ${(props) => props.height};
 align-self: center;
 justify-self: center;
 `

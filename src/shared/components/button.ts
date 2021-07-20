@@ -23,6 +23,8 @@ export const Button = styled.button<{
   text-decoration: none;
   transition: 0.2s;
   border-bottom: white;
+  position: relative;
+  z-index: 21;
 
   font-weight: 500;
   border: none;

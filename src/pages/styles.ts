@@ -110,10 +110,11 @@ export const Heading = styled.h1`
 
 export const LogoImage = styled.img`
   width: 250%;
-  max-width: 80%;
+  max-width: 200%;
+  right: 50%;
   height: auto;
   position: relative;
-  left: -200px;
+
   @media ${device.mobileS} {
     margin-top: 2em;
   }

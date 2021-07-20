@@ -10,11 +10,11 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarInner>
-        <Image src={Zesti} />
+        <Image height="150px" src={Zesti} />
         <Links>
           <NavItem>
             <Link to={routes.INSTALINK}>
-              <Image src={Instagram} />
+              <Image height="40px" src={Instagram} />
             </Link>
           </NavItem>
           <NavItem>
