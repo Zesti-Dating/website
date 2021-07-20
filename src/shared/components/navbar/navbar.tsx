@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavbarContainer, NavbarInner, Links, NavItem, Brand, Insta } from './styles'
+import { NavbarContainer, NavbarInner, Links, NavItem, Image } from './styles'
 import { Link } from 'react-router-dom'
 import { Button } from '@app/shared/components/button'
 import { colors } from '@app/styles/styles'
@@ -10,11 +10,11 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarInner>
-        <Brand src={Zesti} />
+        <Image src={Zesti} />
         <Links>
           <NavItem>
             <Link to={routes.INSTALINK}>
-              <Insta src={Instagram} />
+              <Image src={Instagram} />
             </Link>
           </NavItem>
           <NavItem>

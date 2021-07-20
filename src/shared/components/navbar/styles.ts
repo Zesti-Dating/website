@@ -62,17 +62,9 @@ export const NavItem = styled.p`
   text-align: center;
 `
 
-export const Brand = styled.img`
-width: 100%;
-max-width: 40%;
-height: auto;
-align-self: center;
-justify-self: center;
-`
-
-export const Insta = styled.img`
-width: 100%;
-max-width: 20%;
+export const Image = styled.img`
+height: 100%;
+max-height: 80%;
 height: auto;
 align-self: center;
 justify-self: center;
