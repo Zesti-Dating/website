@@ -58,21 +58,24 @@ const Waitlist = () => {
                 <div style={{ paddingRight: "1em" }}>
                   <form
                     name="waitlist"
-                    method="post"
+                    method="POST"
                     data-netlify="true"
                   >
                     <input type="hidden" name="form-name" value="waitlist" />
                     <Input 
+                      type="text"
                       name="first-name"
                       placeholder="First Name (required)" 
                       borderRadius="40px" 
                     />
                     <Input 
+                      type="text"
                       name="last-name"
                       placeholder="Last Name (required)" 
                       borderRadius="40px" 
                     />
                     <Input 
+                      type="email"
                       name="email"
                       placeholder="Harvard Email (required)" 
                       borderRadius="40px" 
