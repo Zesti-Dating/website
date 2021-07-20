@@ -37,39 +37,31 @@ const Contact = () => {
             data-netlify="true"
           >
             <input type="hidden" name="form-name" value="waitlist" />
-            <Input 
+            <input 
               name="first-name"
               placeholder="First Name (required)" 
-              borderRadius="40px" 
             />
-            <Input 
+            <input 
               name="last-name"
-              placeholder="Last Name (required)" 
-              borderRadius="40px" 
+              placeholder="Last Name (required)"  
             />
-            <Input 
+            <input 
               name="email"
               placeholder="Harvard Email (required)" 
-              borderRadius="40px" 
             />
-            <InputArea
+            <textarea
               name="comments"
               placeholder="Any comments, suggestions, or other inquiries (optional)" 
-              borderRadius="40px" 
             />
-            <Button
+            <button
               type="submit"
-              margin="20px"
-              backgroundColor={colors.PRIMARY}
-              padding="10px 10px 10px 10px"
-              borderRadius="40px"
               color="#ffffff"
               style={{
                 width: "200px",
               }}
             >
               Join Waitlist
-            </Button>
+            </button>
           </form>
         </div>
     </>
