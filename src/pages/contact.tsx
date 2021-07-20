@@ -38,10 +38,22 @@ const Contact = () => {
         <label>Your Email: <Input type="email" name="email"/></label>
       </p>
       <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <label>Message: <InputArea name="message"></InputArea></label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <Button 
+          type="submit"
+          margin="20px"
+          backgroundColor={colors.PRIMARY}
+          padding="10px 10px 10px 10px"
+          borderRadius="40px"
+          color="#ffffff"
+          style={{
+            width: "200px",
+          }}
+        >
+          Join Waitlist
+        </Button>
       </p>
     </form>
   );
