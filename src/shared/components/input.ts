@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 import { colors, fonts } from '@app/styles/styles'
 
-export const Input = styled.input<{ borderRadius?: string }>`
+export const Input = styled.input<{ 
+  borderRadius?: string 
+  name: string 
+}>`
+  name: ${(props) => props.name};
   background-color: #ffffff;
   width: 50%;
   border-radius: ${(props) => props.borderRadius};
@@ -22,7 +26,11 @@ export const Input = styled.input<{ borderRadius?: string }>`
   }
 `
 
-export const InputArea = styled.textarea<{ borderRadius?: string }>`
+export const InputArea = styled.textarea<{ 
+  borderRadius?: string 
+  name: string
+}>`
+  name: ${(props) => props.name};
   background-color: #ffffff;
   width: 75%;
   border-radius: ${(props) => props.borderRadius};

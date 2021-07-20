@@ -59,7 +59,7 @@ const Waitlist = () => {
                   <form
                     name="waitlist"
                     method="post"
-                    data-netlify
+                    data-netlify="true"
                   >
                     <input type="hidden" name="form-name" value="waitlist" />
                     <Input 
@@ -83,7 +83,6 @@ const Waitlist = () => {
                       borderRadius="40px" 
                     />
                     <Button
-                      name="buttonsubmit"
                       type="submit"
                       margin="20px"
                       backgroundColor={colors.PRIMARY}
