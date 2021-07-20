@@ -60,7 +60,7 @@ const Waitlist = () => {
                   <form
                     name="waitlist"
                     method="post"
-                    data-netlify="true"
+                    data-netlify
                   >
                     <input type="hidden" name="form-name" value="waitlist" />
                     <Input 
