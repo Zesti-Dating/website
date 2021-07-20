@@ -109,7 +109,6 @@ export const Heading = styled.h1`
 `
 
 export const LogoImage = styled.img`
-  right: 50%;
   height: auto;
   position: relative;
 
@@ -121,6 +120,7 @@ export const LogoImage = styled.img`
   @media ${device.laptopM} {
     width: 200%;
     margin-top: 0;
+    right: 50%;
   }
 `
 

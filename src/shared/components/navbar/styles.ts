@@ -2,13 +2,21 @@ import styled from 'styled-components'
 import { device } from '@app/shared/components/layout/layout'
 
 export const NavbarContainer = styled.header`
-  width: 100%;
-  height: 120px;
   display: flex;
   justify-content: center;
   /* justify-content: left; */
   z-index: 20;
   position: relative;
+
+  @media ${device.mobileS} {
+    width: 100%;
+    height: 240px;
+  }
+
+  @media ${device.laptopM} {
+    width: 100%;
+    height: 120px;
+  }
 `
 
 export const NavbarInner = styled.div`
