@@ -15,6 +15,7 @@ import {
   Heading,
   HeaderImage,
   Description,
+  Inputs
 } from "./styles";
 import Phone from "@app/assets/message.svg";
 import Send from "@app/assets/send.svg";
@@ -41,66 +42,37 @@ const Waitlist = () => {
                   <Description>
                     Beta Test the Zesti App - we plan to launch in early Fall 2021!
                   </Description>
-                </div>
-              </ZestiSlideIn>
-              <HeaderImage src={Phone} />
-            </ContainerInner>
-          </div>
-        </ZestiFadeIn>
-
-        <ZestiFadeIn>
-          <div
-            style={{ width: "100%", display: "flex", justifyContent: "center" }}
-          >
-            <ContainerInner>
-              <ZestiSlideIn left>
-                <div style={{ paddingRight: "1em" }}>
                   <form
                     name="waitlist"
                     method="POST"
                     data-netlify="true"
                   >
-                    <input type="hidden" name="form-name" value="waitlist" />
-                    <Input 
-                      type="text"
-                      name="first-name"
-                      placeholder="First Name (required)" 
-                      borderRadius="40px" 
-                    />
-                    <Input 
-                      type="text"
-                      name="last-name"
-                      placeholder="Last Name (required)" 
-                      borderRadius="40px" 
-                    />
-                    <Input 
-                      type="email"
-                      name="email"
-                      placeholder="Harvard Email (required)" 
-                      borderRadius="40px" 
-                    />
-                    <InputArea
-                      name="comments"
-                      placeholder="Any comments, suggestions, or other inquiries (optional)" 
-                      borderRadius="40px" 
-                    />
-                    <Button
-                      type="submit"
-                      margin="20px"
-                      backgroundColor={colors.PRIMARY}
-                      padding="10px 10px 10px 10px"
-                      borderRadius="40px"
-                      color="#ffffff"
-                      style={{
-                        width: "200px",
-                      }}
-                    >
-                      Join Waitlist
-                    </Button>
+                    <Inputs>
+                      <input type="hidden" name="form-name" value="waitlist" />
+                      <Input 
+                        type="email"
+                        name="email"
+                        placeholder="Harvard Email (required)" 
+                        borderRadius="40px 0 0 40px" 
+                      />
+                      <Button
+                        type="submit"
+                        margin="20px 0px 20px 0px"
+                        backgroundColor={colors.PRIMARY}
+                        padding="0px 10px 0px 10px"
+                        borderRadius="0px 40px 40px 0px"
+                        color="#ffffff"
+                        style={{
+                          width: "200px",
+                        }}
+                      >
+                        Join Waitlist
+                      </Button>
+                    </Inputs>
                   </form>
                 </div>
               </ZestiSlideIn>
-              <HeaderImage src={Send} />
+              <HeaderImage src={Phone} />
             </ContainerInner>
           </div>
         </ZestiFadeIn>

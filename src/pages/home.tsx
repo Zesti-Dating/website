@@ -27,7 +27,7 @@ const Home = () => {
             <LogoAnimation>
               <LogoImage src={Zesti} />
             </LogoAnimation>
-            <Link to="/about">
+            <Link to="/waitlist">
               <Button
                 type="button"
                 padding="18px 74px 18px 74px"

@@ -16,7 +16,7 @@ export const Input = styled.input<{
   height: 60px;
   border: 1px solid #ffffff;
   transition: 0.2s;
-  margin: 20px; 
+  margin: 20px 0px 20px 0px; 
   font-family: ${fonts.SECONDARY};
 
   &:focus {
