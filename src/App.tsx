@@ -10,7 +10,7 @@ function App () {
   return (
     <HashRouter>
       <Switch>
-        <Route exact path={routes.HOME} component={Home} />
+        <Route exact path={routes.HOME} component={Waitlist} />
         <Route exact path={routes.ABOUT} component={About} />
         <Route exact path={routes.WAITLIST} component={Waitlist} />
         <Route exact path={routes.INSTALINK} component={() => { 
