@@ -40,7 +40,7 @@ const Waitlist = () => {
                 <div style={{ paddingRight: "1em" }}>
                   <Heading>Peel the love tonight, and join our waitlist!</Heading>
                   <Description>
-                    Beta Test the Zesti App - we plan to launch in early Fall 2021!
+                    Beta Test the Zesti App in Spring 2022!
                   </Description>
                   <form
                     name="waitlist"
